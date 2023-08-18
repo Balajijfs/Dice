@@ -13,7 +13,7 @@ import random
 
 root=tk.Tk()
 
-root.title("Dice Roll")
+root.title("Dice Roll Game")
 root.geometry("700x450")
 root.resizable(False,False)
 
@@ -25,7 +25,7 @@ def roll():
     label.configure(text=f'{random.choice(dice)}{random.choice(dice)}')
     label.pack()
 
-button=tk.Button(root,text="Let's Play",width=40,height=3,font=("Arial",10),bg="#fe9037",fg="white",command=roll)
+button=tk.Button(root,text="Roll!",width=40,height=3,font=("Arial",10),bg="#fe9037",fg="white",command=roll)
 
 button.pack(padx=15,pady=15)
 
